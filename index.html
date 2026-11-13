@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FARUKH ♥ MUFAZIA · 2026.11.22 결혼식에 초대합니다</title>
+<meta name="description" content="2026년 11월 22일 일요일 오후 8시, 한패스 본사 B2. 저희 두 사람의 아름다운 약속의 날에 초대합니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FARUKH QAYYUM ♥ MUFAZIA ALAM 결혼식에 초대합니다">
+<meta property="og:description" content="2026년 11월 22일 일요일 오후 8시 · 한패스 본사 B2">
+<meta property="og:image" content="https://farukh-mufazia.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Pretendard';font-weight:300;font-display:swap;src:url('fonts/Pretendard-Light.woff2') format('woff2')}
+  @font-face{font-family:'Pretendard';font-weight:400;font-display:swap;src:url('fonts/Pretendard-Regular.woff2') format('woff2')}
+  @font-face{font-family:'Pretendard';font-weight:600;font-display:swap;src:url('fonts/Pretendard-SemiBold.woff2') format('woff2')}
+
+  :root{
+    --ink:#121212; --night:#0e0e0e; --text:#363636; --sub:#8c8780; --line:#e9e5de;
+    --champ:#c2ad8a; --paper:#fff; --soft:#f8f6f2;
+    --mont:'Montserrat',sans-serif;
+    --pre:'Pretendard',-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  html,body{background:#0b0b0b;color:var(--text);font-family:var(--pre);-webkit-font-smoothing:antialiased;word-break:keep-all}
+  body.locked{overflow:hidden}
+  .wrap{max-width:440px;margin:0 auto;background:var(--paper);overflow:hidden;position:relative}
+
+  /* ===== Film grain + vignette ===== */
+  .grain{position:fixed;inset:-50%;pointer-events:none;z-index:60;opacity:.07;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    animation:grain .9s steps(6) infinite}
+  @keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-6%,-2%)}80%{transform:translate(5%,4%)}100%{transform:translate(0,0)}}
+
+  /* ===== Opening title sequence ===== */
+  .intro{position:fixed;inset:0;z-index:50;background:var(--night);color:#f3efe8;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;transition:opacity 1.2s ease, visibility 1.2s}
+  .intro.done{opacity:0;visibility:hidden}
+  .intro .bar{position:absolute;left:0;right:0;height:13vh;background:#000;z-index:2;transition:transform 1.4s var(--ease)}
+  .intro .bar.t{top:0}.intro .bar.b{bottom:0}
+  .intro.open .bar.t{transform:translateY(-100%)}.intro.open .bar.b{transform:translateY(100%)}
+  .shot{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 28px;opacity:0}
+  .shot.on{animation:shot 2.4s ease forwards}
+  @keyframes shot{0%{opacity:0;filter:blur(10px);transform:scale(1.04)}22%{opacity:1;filter:blur(0);transform:scale(1)}78%{opacity:1;filter:blur(0)}100%{opacity:0;filter:blur(6px);transform:scale(.99)}}
+  .shot.hold{animation:shotHold 2.6s ease forwards}
+  @keyframes shotHold{0%{opacity:0;filter:blur(10px);letter-spacing:.9em}30%{opacity:1;filter:blur(0)}100%{opacity:1;letter-spacing:.42em}}
+  .kicker{font-family:var(--mont);font-weight:300;font-size:11px;letter-spacing:.6em;color:var(--champ);padding-left:.6em}
+  .intro h2{font-family:var(--mont);font-weight:200;font-size:30px;letter-spacing:.42em;padding-left:.42em;line-height:1.5;color:#fff}
+  .intro .amp{display:block;font-weight:200;font-size:18px;color:var(--champ);margin:6px 0}
+  .intro .ko{font-family:var(--pre);font-weight:300;font-size:15px;letter-spacing:.08em;color:#d9d2c6;line-height:2}
+  .intro .line{width:1px;height:46px;background:linear-gradient(var(--champ),transparent);margin:22px auto}
+  .skip{position:absolute;z-index:3;right:20px;bottom:calc(13vh + 18px);font-family:var(--mont);font-size:10px;letter-spacing:.3em;color:#9a948a;background:none;border:1px solid #3a3835;border-radius:999px;padding:8px 14px;cursor:pointer}
+  .tc{position:absolute;z-index:3;left:20px;top:calc(13vh + 18px);font-family:var(--mont);font-size:10px;letter-spacing:.2em;color:#6d6861}
+  .tc i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c4443a;margin-right:8px;vertical-align:1px;animation:rec 1s steps(2) infinite}
+  @keyframes rec{50%{opacity:0}}
+
+  /* ===== Common cinematic pieces ===== */
+  .scene{font-family:var(--mont);font-weight:500;font-size:10px;letter-spacing:.5em;color:var(--champ);padding-left:.5em;display:flex;align-items:center;justify-content:center;gap:12px}
+  .scene::before,.scene::after{content:"";width:26px;height:1px;background:currentColor;opacity:.6}
+  .rv{opacity:0;transform:translateY(28px);filter:blur(6px);transition:opacity 1.3s var(--ease),transform 1.3s var(--ease),filter 1.3s var(--ease)}
+  .rv.in{opacity:1;transform:none;filter:none}
+  .d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}.d4{transition-delay:.48s}
+  .wipe{display:block;overflow:hidden}
+  .wipe > span{display:block;transform:translateY(105%);transition:transform 1.3s var(--ease)}
+  .in .wipe > span,.wipe.in > span{transform:none}
+
+  /* ===== HERO (Scene 01) ===== */
+  .hero{position:relative;padding:58px 22px 64px;text-align:center;background:var(--paper)}
+  .hero .lb{position:absolute;left:0;right:0;height:22px;background:var(--night)}
+  .hero .lb.t{top:0}.hero .lb.b{bottom:0}
+  .hero .meta{display:flex;justify-content:space-between;font-family:var(--mont);font-size:9.5px;letter-spacing:.3em;color:var(--sub);padding:0 4px}
+  .hero .date{margin-top:26px;font-family:var(--mont);font-weight:200;font-size:56px;letter-spacing:.06em;color:var(--ink);line-height:1}
+  .hero .date small{display:block;font-weight:400;font-size:10px;letter-spacing:.5em;color:var(--champ);margin-top:14px;padding-left:.5em}
+  .stage{position:relative;margin:16px auto 0;width:100%;max-width:380px}
+  .stage svg{display:block;width:100%;height:auto;overflow:visible}
+  .spot{position:absolute;left:50%;top:52%;width:120%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+    background:radial-gradient(circle,rgba(194,173,138,.22),rgba(194,173,138,0) 62%);animation:spot 6s ease-in-out infinite;pointer-events:none}
+  @keyframes spot{50%{transform:translate(-50%,-50%) scale(1.08);opacity:.75}}
+
+  .enter-l{animation:enterL 1.6s var(--ease) both}
+  .enter-r{animation:enterR 1.6s var(--ease) .15s both}
+  @keyframes enterL{from{opacity:0;transform:translateX(-80px)}to{opacity:1;transform:none}}
+  @keyframes enterR{from{opacity:0;transform:translateX(80px)}to{opacity:1;transform:none}}
+  .groom{transform-box:fill-box;transform-origin:30% 100%;animation:groove 1.1s ease-in-out 1.6s infinite}
+  @keyframes groove{0%,100%{transform:translateY(0) rotate(0)}25%{transform:translateY(-16px) rotate(-2.5deg)}50%{transform:translateY(0) rotate(0)}75%{transform:translateY(-9px) rotate(2deg)}}
+  .bride{transform-box:fill-box;transform-origin:45% 100%;animation:sway 2.2s ease-in-out 1.7s infinite}
+  @keyframes sway{0%,100%{transform:rotate(0) translateY(0)}25%{transform:rotate(2.6deg) translateY(-6px)}50%{transform:rotate(0) translateY(0)}75%{transform:rotate(-2.2deg) translateY(-4px)}}
+  .note{opacity:0;animation:float 3.6s ease-out infinite}
+  .note.n2{animation-delay:.9s}.note.n3{animation-delay:1.8s}.note.n4{animation-delay:2.7s}
+  @keyframes float{0%{opacity:0;transform:translate(0,20px) rotate(-8deg)}20%{opacity:1}70%{opacity:.9}100%{opacity:0;transform:translate(14px,-70px) rotate(10deg)}}
+  .twinkle{fill:var(--champ);opacity:0;transform-box:fill-box;transform-origin:center;animation:tw 2.8s ease-in-out infinite}
+  .twinkle.t2{animation-delay:.8s}.twinkle.t3{animation-delay:1.6s}.twinkle.t4{animation-delay:2.2s}
+  @keyframes tw{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:.9;transform:scale(1)}}
+
+  .title{margin-top:30px}
+  .title .starring{font-family:var(--mont);font-weight:400;font-size:9.5px;letter-spacing:.55em;color:var(--sub);padding-left:.55em}
+  .title h1{margin-top:16px;font-family:var(--mont);font-weight:300;font-size:22px;letter-spacing:.32em;padding-left:.32em;color:var(--ink);line-height:1.75}
+  .title h1 em{display:block;font-style:normal;font-weight:200;font-size:13px;letter-spacing:.4em;color:var(--champ);line-height:2}
+  .title .tag{margin-top:22px;font-size:14px;line-height:1.9;color:var(--sub);font-weight:300}
+  .title .tag b{font-weight:400;color:var(--text)}
+  .cue{margin-top:34px;font-family:var(--mont);font-size:9px;letter-spacing:.4em;color:var(--sub)}
+  .cue span{display:block;width:1px;height:34px;margin:10px auto 0;background:var(--ink);transform-origin:top;animation:cue 2.2s ease-in-out infinite}
+  @keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* ===== Scene 02 : monologue (dark) ===== */
+  .mono{background:var(--night);color:#efe9df;padding:96px 30px 100px;text-align:center;position:relative}
+  .mono .scene{color:var(--champ)}
+  .mono .quote{font-family:var(--mont);font-weight:200;font-size:64px;line-height:.6;color:var(--champ);margin-top:38px;opacity:.8}
+  .mono .lines{margin-top:18px}
+  .mono .ln{font-size:19px;font-weight:300;line-height:1.85;letter-spacing:-.01em;color:#f4efe7}
+  .mono .ln.sm{font-size:15px;color:#bdb5a8;margin-top:34px;line-height:2}
+  .mono .gap{height:30px}
+  .mono .sig{margin-top:46px;font-family:var(--mont);font-size:11px;letter-spacing:.32em;color:#a39b8e;line-height:2.4}
+  .mono .sig b{color:#fff;font-weight:400}
+  .mono .sig i{font-style:normal;font-family:var(--pre);letter-spacing:.1em;color:var(--champ);margin-right:10px;font-size:11.5px}
+
+  /* ===== Scene 03 : the day ===== */
+  .day{padding:92px 28px 86px;text-align:center;background:var(--paper)}
+  .big{position:relative;margin-top:34px;display:inline-block}
+  .big .num{font-family:var(--mont);font-weight:200;font-size:150px;line-height:.9;letter-spacing:-.04em;color:var(--ink)}
+  .big .mon{position:absolute;right:-30px;top:6px;font-family:var(--mont);font-size:11px;letter-spacing:.4em;color:var(--champ);writing-mode:vertical-rl}
+  .day .when{margin-top:20px;font-family:var(--mont);font-weight:400;font-size:12px;letter-spacing:.38em;color:var(--ink);padding-left:.38em}
+  .day .when-ko{margin-top:10px;font-size:14px;color:var(--sub);font-weight:300}
+  .cal{margin:40px auto 0;max-width:300px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 4px}
+  .cal table{width:100%;border-collapse:collapse;font-family:var(--mont);font-size:12.5px}
+  .cal th{font-weight:500;font-size:9.5px;letter-spacing:.14em;color:var(--sub);padding-bottom:12px}
+  .cal td{height:36px;color:var(--text);font-weight:300;text-align:center}
+  .cal .sun{color:#b9756a}
+  .cal td.dday span{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:50%;background:var(--ink);color:#fff;font-weight:500;position:relative}
+  .cal td.dday span::after{content:"";position:absolute;inset:-5px;border:1px solid var(--ink);border-radius:50%;animation:ring 2.4s ease-out infinite}
+  @keyframes ring{from{transform:scale(.8);opacity:1}to{transform:scale(1.5);opacity:0}}
+  .timecode{margin-top:38px;display:inline-flex;align-items:baseline;gap:4px;font-family:var(--mont);font-weight:300;color:var(--ink);padding:14px 20px;border:1px solid var(--ink)}
+  .timecode b{font-weight:300;font-size:26px;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+  .timecode s{text-decoration:none;font-size:20px;color:var(--champ);margin:0 2px}
+  .tclab{display:flex;justify-content:center;gap:34px;margin-top:8px;font-family:var(--mont);font-size:8.5px;letter-spacing:.3em;color:var(--sub)}
+  .dline{margin-top:22px;font-size:14px;font-weight:300;color:var(--text)}
+  .dline b{font-weight:600;color:var(--ink)}
+
+  /* ===== Scene 04 : location ===== */
+  .loc{position:relative;padding:92px 28px 90px;text-align:center;background:var(--soft);overflow:hidden}
+  .loc .ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--mont);font-weight:600;font-size:76px;letter-spacing:.02em;color:rgba(18,18,18,.045);white-space:nowrap;pointer-events:none}
+  .loc .place{margin-top:34px;font-size:24px;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+  .loc .place-en{margin-top:10px;font-family:var(--mont);font-size:10.5px;letter-spacing:.34em;color:var(--sub)}
+  .loc .time{margin-top:26px;font-size:14.5px;line-height:1.9;font-weight:300;color:var(--text)}
+  .chip{display:inline-flex;align-items:center;gap:8px;margin-top:28px;padding:10px 18px;background:var(--ink);color:#fff;border-radius:999px;font-family:var(--mont);font-weight:500;font-size:10px;letter-spacing:.26em}
+  .chip i{width:6px;height:6px;border-radius:50%;background:#e2554a;animation:rec 1.2s steps(2) infinite}
+  .chip span{font-family:var(--pre);letter-spacing:0;font-size:12px;font-weight:400}
+
+  /* ===== Scene 05 : with love ===== */
+  .love{padding:92px 28px 80px;text-align:center;background:var(--paper)}
+  .love .who{margin-top:34px;font-family:var(--mont);font-size:9.5px;letter-spacing:.45em;color:var(--sub)}
+  .love .who-name{font-family:var(--mont);font-weight:400;font-size:17px;letter-spacing:.22em;color:var(--ink);margin-top:10px}
+  .box{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;padding:20px 18px;border:1px solid var(--line);text-align:left;position:relative}
+  .box::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--ink);transform:scaleY(0);transform-origin:top;transition:transform 1.2s var(--ease) .3s}
+  .box.in::before{transform:scaleY(1)}
+  .box .k{font-size:12px;color:var(--sub);font-weight:300}
+  .box .v{font-family:var(--mont);font-size:15px;color:var(--ink);margin-top:5px;letter-spacing:.03em}
+  .box .h{font-size:12px;color:var(--sub);margin-top:3px;font-weight:300}
+  .btns{display:flex;gap:6px;flex-shrink:0}
+  .btn{border:1px solid #d6d1c9;background:#fff;color:var(--text);font-family:var(--pre);font-size:12.5px;padding:8px 13px;border-radius:999px;cursor:pointer;text-decoration:none;white-space:nowrap}
+  .btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+  .tip{margin-top:24px;font-size:12.5px;color:var(--sub);line-height:1.8;font-weight:300}
+
+  /* ===== End credits ===== */
+  .credits{background:var(--night);color:#d8d1c5;text-align:center;padding:100px 30px 40px;position:relative;overflow:hidden}
+  .roll{font-family:var(--mont)}
+  .roll .role{font-size:9px;letter-spacing:.5em;color:#8f887c;padding-left:.5em}
+  .roll .who{margin-top:10px;font-weight:300;font-size:15px;letter-spacing:.24em;color:#fff;line-height:1.8}
+  .roll .who.ko{font-family:var(--pre);letter-spacing:.06em;font-size:14px}
+  .roll .blk{margin-bottom:44px}
+  .end{margin-top:70px;font-family:var(--mont);font-weight:200;font-size:30px;letter-spacing:.6em;padding-left:.6em;color:#fff}
+  .end-sub{margin-top:16px;font-family:var(--mont);font-size:9.5px;letter-spacing:.4em;color:#7b756b}
+  .replay{margin-top:40px;background:none;border:1px solid #3a3835;color:#a59e92;font-family:var(--mont);font-size:9.5px;letter-spacing:.3em;padding:10px 16px;border-radius:999px;cursor:pointer}
+  .credits .lb{height:22px;background:#000;position:absolute;left:0;right:0;bottom:0}
+
+  .toast{position:fixed;left:50%;bottom:32px;transform:translate(-50%,16px);background:var(--ink);color:#fff;font-size:13px;padding:11px 20px;border-radius:999px;opacity:0;transition:.3s;z-index:70;pointer-events:none}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  @media (prefers-reduced-motion:reduce){
+    .grain,.groom,.bride,.note,.twinkle,.spot{animation:none}
+    .note{opacity:1}
+    .rv{opacity:1;transform:none;filter:none;transition:none}
+    .wipe > span{transform:none}
+  }
+</style>
+</head>
+<body class="locked">
+
+<!-- ===== OPENING TITLES ===== -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="bar t"></div><div class="bar b"></div>
+  <div class="tc"><i></i>REC 2026.11.22</div>
+  <div class="shot" id="s1"><div class="kicker">A LOVE STORY</div><div class="line"></div><div class="ko">두 사람의 이야기가<br>새로운 장면을 시작합니다</div></div>
+  <div class="shot" id="s2"><h2>FARUKH<span class="amp">&amp;</span>MUFAZIA</h2></div>
+  <div class="shot" id="s3"><div class="kicker">COMING</div><div class="line"></div><h2 style="font-size:24px">22 . 11 . 2026</h2></div>
+  <button class="skip" id="skip" type="button">SKIP</button>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <!-- ===== SCENE 01 ===== -->
+  <header class="hero">
+    <div class="lb t"></div>
+    <div class="meta rv"><span>SCENE 01</span><span>THE DANCE</span></div>
+    <div class="date rv d1">11.22<small>SUNDAY · 8 PM</small></div>
+    <div class="stage" aria-label="춤추는 신랑 신부 일러스트">
+      <div class="spot"></div>
+      <svg viewBox="0 70 880 1030" xmlns="http://www.w3.org/2000/svg">
+        <!-- sparkles -->
+        <path class="twinkle"    d="M250 140 l5 15 15 5 -15 5 -5 15 -5 -15 -15 -5 15 -5z"/>
+        <path class="twinkle t2" d="M560 190 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/>
+        <path class="twinkle t3" d="M840 520 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/>
+        <path class="twinkle t4" d="M30 640 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/>
+
+        <!-- music notes -->
+        <g fill="#1a1a1a" stroke="#1a1a1a">
+          <g class="note"><g transform="translate(55 470)"><ellipse rx="13" ry="9" transform="rotate(-22)" stroke="none"/><line x1="11" y1="-3" x2="11" y2="-54" stroke-width="4"/><path d="M11 -54 q20 8 18 32" fill="none" stroke-width="4"/></g></g>
+          <g class="note n2"><g transform="translate(440 265)"><ellipse rx="12" ry="8.5" transform="rotate(-22)" stroke="none"/><ellipse cx="38" cy="-8" rx="12" ry="8.5" transform="rotate(-22 38 -8)" stroke="none"/><line x1="10" y1="-3" x2="10" y2="-52" stroke-width="4"/><line x1="48" y1="-11" x2="48" y2="-60" stroke-width="4"/><path d="M10 -52 L48 -60" stroke-width="9"/></g></g>
+          <g class="note n3"><g transform="translate(790 340)"><ellipse rx="12" ry="8.5" transform="rotate(-22)" stroke="none"/><line x1="10" y1="-3" x2="10" y2="-50" stroke-width="4"/><path d="M10 -50 q18 8 16 28" fill="none" stroke-width="4"/></g></g>
+          <g class="note n4"><g transform="translate(330 200)"><ellipse rx="10" ry="7" transform="rotate(-22)" stroke="none"/><line x1="8" y1="-2" x2="8" y2="-42" stroke-width="3.5"/><path d="M8 -42 q15 7 13 24" fill="none" stroke-width="3.5"/></g></g>
+        </g>
+
+        <!-- groom -->
+        <g class="enter-l"><g class="groom">
+          <path fill="#1a1a1a" fill-rule="evenodd" d="M 40 105 C 38 107, 39 111, 44 119 C 49 129, 49 130, 44 124 C 36 114, 32 112, 30 116 C 28 119, 30 122, 36 131 C 39 135, 42 139, 41 139 C 41 139, 38 137, 35 135 C 20 125, 17 133, 32 145 C 41 152, 41 153, 45 162 C 48 167, 51 173, 52 175 C 55 179, 55 180, 55 186 L 55 194 52 195 C 48 197, 48 197, 48 204 C 48 210, 48 211, 44 213 C 41 216, 40 218, 42 229 C 43 238, 47 273, 48 289 C 49 301, 49 303, 52 309 C 54 313, 56 321, 58 329 C 63 357, 71 384, 79 404 C 81 409, 84 416, 84 419 C 84 422, 87 435, 89 449 C 91 462, 93 477, 94 482 C 94 491, 95 491, 89 503 C 87 505, 80 516, 72 526 C 46 561, 28 591, 31 597 C 31 598, 34 600, 37 603 C 40 605, 49 613, 57 621 C 78 643, 80 641, 100 598 C 105 588, 109 579, 109 580 C 109 580, 108 583, 107 588 C 99 611, 98 633, 102 657 C 103 661, 105 671, 107 679 C 110 695, 117 724, 124 747 C 129 764, 129 764, 128 771 C 126 782, 127 789, 129 796 L 131 802 121 821 C 107 848, 104 857, 88 916 C 82 936, 81 940, 74 954 C 63 977, 63 974, 69 978 L 75 981 73 986 C 69 996, 68 998, 66 999 C 62 1002, 56 1015, 55 1024 C 54 1026, 54 1029, 53 1032 C 51 1040, 51 1041, 59 1044 C 68 1049, 72 1049, 72 1046 C 72 1039, 76 1042, 82 1054 C 87 1064, 94 1067, 116 1069 C 128 1070, 141 1069, 143 1067 C 144 1066, 144 1065, 143 1061 C 141 1055, 139 1052, 129 1048 C 125 1046, 120 1043, 119 1041 C 116 1038, 109 1023, 106 1014 C 105 1011, 104 1008, 103 1008 C 102 1006, 102 1002, 103 996 L 103 992 110 993 L 118 993 120 981 C 130 939, 141 907, 169 842 C 177 823, 185 805, 186 802 C 188 794, 188 771, 185 746 C 183 716, 183 669, 186 665 C 186 665, 195 667, 205 669 C 230 676, 259 680, 276 680 C 284 680, 285 683, 278 690 C 270 698, 265 705, 259 721 C 251 738, 249 741, 236 758 C 224 773, 224 774, 229 777 L 232 779 226 787 C 220 796, 217 799, 215 799 C 211 799, 202 811, 199 820 C 198 823, 196 828, 195 831 L 193 836 195 838 C 198 841, 215 850, 217 850 C 218 850, 220 849, 220 846 C 222 843, 222 843, 224 844 C 227 846, 233 853, 236 859 C 242 871, 258 879, 283 882 C 295 884, 296 883, 296 876 C 295 870, 292 866, 281 859 C 276 856, 272 853, 270 852 C 268 849, 260 830, 257 820 C 256 817, 254 815, 253 814 C 251 812, 252 807, 256 800 C 258 795, 260 793, 261 794 C 269 797, 281 801, 282 801 C 282 800, 284 797, 286 793 C 295 766, 314 733, 338 701 C 368 659, 368 653, 335 632 C 312 617, 286 605, 257 598 C 250 596, 247 595, 251 596 C 253 596, 258 597, 261 598 L 267 599 272 595 C 279 588, 278 585, 256 561 C 235 536, 230 528, 230 513 L 230 505 231 514 C 232 524, 234 529, 241 540 C 247 549, 248 549, 256 546 C 265 541, 304 516, 307 512 C 307 511, 308 508, 308 505 C 308 502, 308 500, 310 498 C 312 497, 312 496, 312 493 C 311 489, 311 488, 315 485 C 320 481, 332 461, 332 457 C 332 453, 331 446, 330 445 C 329 445, 329 444, 329 443 C 329 440, 327 438, 323 436 C 322 436, 318 434, 314 432 C 306 428, 305 429, 301 434 C 299 436, 298 437, 295 437 C 290 437, 288 440, 289 445 C 289 448, 289 452, 290 456 C 290 461, 290 464, 292 467 C 293 470, 294 472, 294 472 C 294 472, 292 474, 290 475 C 289 476, 286 477, 286 477 C 285 477, 281 479, 277 482 C 271 488, 258 496, 258 496 C 257 496, 257 492, 257 477 C 257 468, 256 461, 256 459 C 255 458, 256 454, 256 450 C 260 433, 259 409, 255 403 C 254 401, 249 399, 232 393 L 210 386 202 378 C 195 371, 195 371, 196 368 C 196 363, 196 363, 204 367 C 213 370, 218 369, 219 364 C 219 363, 220 360, 220 359 C 221 355, 221 354, 220 349 C 220 347, 220 346, 222 345 C 227 344, 231 341, 231 339 C 231 338, 232 337, 235 337 C 241 335, 241 334, 238 328 C 234 321, 234 319, 238 314 C 241 311, 241 310, 241 302 L 240 294 242 296 C 244 298, 244 299, 244 301 C 243 304, 243 304, 245 303 C 246 301, 246 299, 246 298 L 245 295 247 297 C 250 301, 250 302, 245 306 C 243 307, 243 307, 245 307 C 250 307, 253 299, 250 296 C 249 295, 249 295, 252 295 C 257 295, 262 289, 260 286 C 259 285, 259 285, 259 286 C 259 288, 255 291, 253 291 C 252 290, 251 289, 251 287 C 251 285, 250 283, 249 282 C 247 280, 247 280, 249 277 C 252 270, 246 261, 238 262 C 236 263, 232 264, 230 265 C 227 266, 226 267, 222 265 C 216 264, 213 261, 218 262 C 221 263, 221 263, 220 261 C 219 260, 216 260, 214 259 C 212 259, 209 259, 208 258 C 204 257, 199 257, 196 258 C 194 259, 194 259, 194 257 C 194 251, 187 252, 184 258 C 183 261, 183 262, 183 261 C 187 255, 191 254, 192 257 C 192 258, 179 266, 177 266 C 176 266, 177 265, 178 265 C 180 264, 181 261, 178 261 C 172 258, 163 262, 162 268 C 161 271, 160 271, 157 271 C 151 271, 144 275, 142 280 C 141 283, 142 289, 144 289 C 145 289, 144 290, 142 292 C 135 298, 135 304, 140 310 C 142 311, 143 313, 143 314 C 143 316, 143 316, 142 315 C 141 313, 140 314, 140 316 C 140 318, 141 319, 142 320 C 143 321, 143 321, 143 320 C 143 318, 145 319, 146 323 C 147 326, 147 326, 145 326 C 144 325, 143 326, 143 327 C 143 327, 144 328, 145 329 C 148 329, 152 334, 150 334 C 149 334, 149 334, 149 335 C 149 336, 150 336, 150 336 C 157 336, 155 350, 147 356 C 140 363, 139 363, 138 361 C 134 348, 128 341, 121 341 C 118 341, 118 341, 118 349 C 118 353, 118 358, 117 361 C 117 363, 116 360, 116 351 C 116 337, 116 336, 113 326 C 107 308, 103 299, 100 296 C 99 294, 98 293, 99 290 C 99 288, 98 281, 97 274 C 94 253, 92 242, 91 225 C 89 210, 89 207, 87 206 C 85 204, 85 203, 85 198 C 85 192, 85 191, 83 190 C 80 189, 82 177, 87 171 C 91 167, 92 164, 94 159 C 96 151, 100 144, 105 140 C 109 136, 109 134, 106 132 C 102 130, 97 132, 91 138 C 87 142, 84 144, 83 144 C 81 143, 77 135, 73 121 C 69 108, 66 104, 63 104 C 58 104, 58 106, 61 118 C 62 124, 63 129, 63 130 C 63 130, 60 126, 57 121 C 49 107, 44 102, 40 105 M 42 108 C 41 108, 44 115, 49 123 C 55 135, 56 138, 55 139 C 54 140, 53 140, 52 138 C 49 134, 36 119, 34 118 C 33 117, 33 117, 32 118 C 32 120, 35 125, 43 136 C 51 146, 49 147, 37 140 C 23 131, 20 132, 33 142 C 42 149, 44 153, 49 163 C 51 167, 54 172, 55 174 C 58 178, 58 178, 58 188 L 58 199 62 198 C 64 198, 68 197, 72 196 L 79 194 79 184 C 80 174, 80 173, 84 170 C 86 168, 89 164, 89 162 C 90 159, 92 155, 93 152 C 94 148, 97 144, 100 141 C 103 137, 105 135, 104 135 C 102 133, 96 136, 91 142 C 88 145, 86 147, 84 148 C 78 149, 74 152, 72 156 L 70 161 70 157 C 71 154, 76 148, 79 147 C 80 146, 80 146, 79 144 C 76 141, 74 137, 71 126 C 67 113, 65 107, 62 107 C 61 107, 61 108, 61 110 C 69 138, 67 143, 56 124 C 47 109, 43 105, 42 108 M 58 154 C 62 156, 68 162, 68 165 C 68 165, 68 166, 69 166 C 70 166, 69 162, 67 159 C 64 156, 58 152, 56 152 C 54 152, 55 153, 58 154 M 80 196 C 76 198, 65 201, 57 201 L 50 201 51 210 C 51 215, 51 220, 52 220 C 53 221, 69 218, 76 215 L 83 211 83 205 C 83 196, 82 194, 80 196 M 195 261 C 193 262, 191 263, 191 262 C 191 262, 189 264, 187 266 C 185 268, 184 269, 185 268 C 186 268, 187 267, 187 267 C 188 267, 188 268, 187 268 C 187 269, 188 269, 189 268 C 191 267, 194 266, 198 265 C 201 265, 203 264, 202 264 C 201 264, 199 264, 197 264 C 195 265, 194 265, 193 265 C 192 264, 200 261, 203 261 C 206 261, 206 261, 205 260 C 203 259, 199 259, 195 261 M 173 262 C 169 263, 166 264, 165 267 C 164 269, 164 269, 167 267 C 170 264, 171 264, 177 263 C 178 263, 178 262, 178 262 C 177 262, 175 262, 173 262 M 239 266 C 243 267, 244 269, 244 274 C 243 278, 244 279, 246 276 C 249 271, 245 265, 239 265 L 236 265 239 266 M 216 268 C 217 269, 217 269, 215 268 C 212 267, 208 267, 206 268 C 204 269, 204 269, 204 268 C 205 267, 198 269, 197 271 C 195 272, 200 271, 201 270 C 203 269, 204 269, 203 270 C 203 271, 211 271, 217 269 C 219 269, 219 269, 218 267 C 215 265, 213 266, 216 268 M 225 269 C 224 269, 221 271, 218 272 C 214 274, 212 275, 214 275 C 217 275, 226 271, 226 269 C 227 268, 226 267, 225 269 M 224 273 C 220 275, 216 277, 215 277 L 213 278 215 278 C 217 278, 221 277, 224 275 C 232 271, 236 271, 238 276 C 239 278, 239 279, 239 278 C 240 269, 235 268, 224 273 M 149 276 C 145 279, 144 282, 145 284 C 145 285, 146 284, 147 282 C 149 278, 151 276, 157 275 L 162 273 157 273 C 153 273, 151 274, 149 276 M 179 274 C 184 275, 185 276, 181 276 C 179 277, 176 278, 175 279 C 174 280, 174 280, 176 279 C 177 279, 181 278, 183 278 C 186 277, 188 277, 188 276 C 188 275, 182 273, 178 273 C 175 273, 175 273, 179 274 M 162 277 C 155 278, 153 279, 151 282 L 150 286 154 282 L 157 279 155 282 L 154 286 157 283 C 158 282, 160 280, 160 280 C 160 279, 162 279, 164 278 C 166 278, 168 277, 169 277 C 169 276, 169 276, 168 276 C 168 276, 165 277, 162 277 M 163 281 C 163 282, 162 283, 162 285 C 162 286, 162 287, 161 289 C 161 290, 161 290, 164 287 C 165 286, 168 284, 169 283 C 171 281, 170 282, 168 283 C 163 285, 162 285, 164 282 C 165 280, 165 279, 163 281 M 194 282 C 191 283, 189 283, 185 282 C 181 282, 180 282, 181 283 C 184 285, 197 283, 197 281 C 197 280, 197 280, 197 280 C 197 280, 195 281, 194 282 M 242 283 C 244 283, 246 284, 247 286 C 249 288, 249 288, 249 286 C 249 284, 246 282, 242 282 L 240 282 242 283 M 197 286 C 194 287, 190 288, 188 288 C 184 288, 184 288, 186 290 C 189 291, 194 291, 196 290 C 197 289, 197 289, 195 289 C 193 289, 193 289, 196 288 C 197 287, 199 286, 200 286 C 202 284, 202 284, 197 286 M 210 286 C 210 287, 210 288, 209 288 C 208 289, 208 290, 208 292 C 208 296, 207 298, 202 300 C 199 302, 198 303, 196 308 C 195 313, 194 314, 191 314 C 189 314, 188 313, 188 310 C 188 308, 187 306, 186 305 C 185 304, 184 303, 184 303 C 184 299, 177 297, 174 299 C 167 305, 169 320, 177 322 C 180 322, 181 324, 178 325 C 178 325, 176 324, 174 323 C 170 320, 169 321, 167 326 C 167 330, 164 334, 161 334 C 159 335, 158 336, 158 340 C 157 343, 156 348, 155 352 L 154 358 157 362 C 159 364, 165 369, 170 374 C 175 378, 180 382, 181 383 C 183 386, 191 376, 193 369 C 194 364, 194 364, 190 359 C 185 351, 187 351, 196 357 C 209 366, 216 368, 216 362 C 216 360, 217 358, 218 357 C 219 353, 219 353, 218 353 C 213 353, 208 344, 207 335 C 206 328, 206 327, 209 327 C 210 327, 211 327, 210 328 C 210 329, 211 331, 220 336 C 228 341, 228 341, 228 338 C 229 336, 230 335, 233 334 C 237 334, 237 333, 235 327 C 231 321, 231 319, 234 315 C 238 310, 238 308, 237 299 C 236 292, 234 288, 231 288 C 230 288, 229 287, 229 286 C 227 285, 227 285, 225 286 C 224 287, 222 288, 221 288 C 219 288, 219 288, 221 286 C 225 285, 225 284, 222 285 C 219 285, 214 285, 211 284 C 210 284, 209 284, 210 286 M 141 296 C 140 297, 140 300, 139 302 L 139 306 140 302 C 141 299, 143 297, 143 296 C 144 296, 144 295, 143 295 C 143 295, 142 296, 141 296 M 175 302 C 173 303, 174 304, 176 303 C 178 303, 179 303, 180 305 C 181 308, 183 309, 182 306 C 181 302, 178 300, 175 302 M 217 302 C 212 304, 213 305, 219 305 C 222 304, 224 304, 226 305 C 229 307, 231 307, 231 304 C 231 301, 223 300, 217 302 M 215 313 C 214 314, 214 314, 217 314 C 220 314, 221 315, 222 316 C 224 318, 225 319, 225 316 C 225 312, 219 310, 215 313 M 209 333 C 209 336, 221 344, 223 342 C 224 342, 223 340, 219 338 C 216 336, 212 334, 211 333 C 210 332, 209 332, 209 333 M 179 340 C 179 342, 183 347, 184 347 C 184 346, 180 338, 179 338 C 179 338, 179 339, 179 340 M 149 361 C 148 366, 154 385, 159 393 L 164 401 169 394 C 172 390, 175 386, 176 385 C 179 384, 179 384, 171 378 C 163 372, 152 361, 152 359 C 152 357, 150 358, 149 361 M 194 375 C 194 375, 192 377, 190 380 L 186 383 189 387 C 191 390, 193 393, 194 396 C 195 398, 197 400, 197 400 C 199 400, 199 388, 197 382 C 196 376, 194 372, 194 375 M 156 392 C 156 392, 157 399, 158 406 C 161 423, 162 458, 160 471 C 158 492, 153 504, 132 538 C 126 547, 120 557, 119 560 L 116 565 122 565 C 130 566, 154 566, 165 565 L 173 565 169 558 L 166 552 168 539 C 175 507, 177 484, 178 434 L 179 405 175 399 L 172 393 169 398 C 164 404, 164 404, 162 400 C 160 396, 156 391, 156 392 M 189 399 C 188 402, 188 405, 189 412 C 193 432, 194 443, 193 482 C 193 534, 192 551, 187 558 C 182 564, 181 564, 204 560 C 214 558, 222 556, 222 556 C 223 556, 224 555, 224 553 C 225 551, 225 549, 221 543 C 214 528, 211 513, 211 488 C 211 457, 209 431, 204 408 C 201 394, 200 392, 199 398 C 198 404, 197 404, 194 399 C 191 393, 191 393, 189 399 M 303 435 C 300 440, 301 444, 305 439 C 307 436, 308 436, 312 437 C 318 438, 318 438, 312 435 C 306 431, 307 431, 303 435 M 306 440 C 306 441, 304 443, 304 445 C 304 447, 303 450, 302 451 C 302 452, 302 453, 303 453 C 303 453, 304 452, 304 451 C 304 447, 309 443, 314 443 C 321 443, 323 445, 316 445 C 311 445, 310 445, 308 448 C 306 451, 304 456, 306 457 C 307 458, 307 458, 307 457 C 307 453, 312 450, 317 450 C 320 450, 323 451, 324 451 C 324 452, 323 452, 319 452 C 314 451, 313 452, 311 454 C 308 457, 308 461, 313 462 C 316 462, 317 461, 315 459 C 313 458, 316 457, 319 458 C 320 458, 321 459, 320 459 C 320 459, 319 460, 319 461 C 319 463, 318 463, 314 465 C 307 466, 305 469, 305 474 C 305 476, 305 477, 304 477 C 302 475, 303 470, 306 467 L 308 464 304 459 C 302 457, 300 454, 300 453 C 299 452, 298 451, 298 452 C 297 452, 296 451, 295 449 C 292 446, 293 445, 296 447 C 300 451, 303 446, 299 441 C 296 439, 295 439, 293 440 C 291 442, 291 442, 292 447 C 293 450, 293 454, 293 456 C 292 458, 293 461, 295 466 C 297 472, 297 472, 296 475 C 294 478, 296 483, 301 488 L 304 491 310 485 C 319 478, 331 457, 329 454 C 329 453, 328 451, 328 450 C 328 448, 327 447, 327 446 C 326 445, 325 444, 326 443 C 326 441, 326 440, 316 439 C 309 438, 308 439, 306 440 M 288 480 C 285 482, 285 483, 286 486 C 287 492, 291 499, 294 503 L 298 506 303 502 L 308 497 304 494 C 300 492, 292 482, 292 479 C 292 476, 291 477, 288 480 M 210 812 C 207 816, 205 820, 207 821 C 208 822, 214 810, 213 809 C 212 809, 211 810, 210 812 M 246 821 C 247 824, 257 846, 258 847 C 259 849, 260 847, 259 846 C 257 844, 248 822, 248 820 C 248 819, 247 818, 247 818 C 246 818, 246 819, 246 821 M 263 860 C 263 861, 268 864, 277 868 C 294 874, 293 871, 276 863 C 264 859, 263 858, 263 860 M 93 1013 C 93 1016, 103 1040, 104 1039 C 105 1039, 106 1039, 107 1039 C 109 1039, 109 1039, 107 1038 C 105 1038, 104 1035, 100 1026 C 93 1011, 93 1011, 93 1013 M 63 1016 C 61 1021, 61 1023, 62 1023 C 64 1022, 65 1017, 65 1014 C 64 1013, 64 1014, 63 1016 M 109 1050 C 107 1052, 110 1053, 121 1055 C 134 1058, 135 1058, 135 1057 C 135 1055, 129 1053, 121 1052 C 116 1051, 111 1050, 110 1050 C 110 1049, 109 1049, 109 1050"/>
+        </g></g>
+
+        <!-- bride -->
+        <g class="enter-r"><g class="bride">
+          <path fill="#1a1a1a" fill-rule="evenodd" d="M 617 316 C 615 317, 613 319, 612 320 C 610 322, 610 322, 608 321 C 603 316, 591 319, 586 326 C 585 328, 582 331, 579 333 C 570 338, 567 346, 571 355 C 571 357, 572 359, 572 360 C 572 362, 567 367, 563 367 C 553 369, 549 375, 553 382 C 555 387, 555 391, 552 392 C 550 393, 550 393, 551 393 C 553 393, 557 390, 557 388 C 557 387, 556 385, 556 383 C 553 376, 555 373, 565 370 C 575 367, 577 364, 577 355 C 576 350, 576 348, 578 345 C 581 340, 582 339, 583 343 C 583 348, 584 358, 585 361 C 585 364, 585 364, 581 366 C 577 368, 577 368, 578 371 C 579 372, 580 373, 580 373 C 581 373, 581 375, 581 377 C 581 380, 582 384, 584 388 C 586 392, 588 397, 588 401 C 589 410, 591 411, 602 411 L 611 410 611 413 C 613 419, 610 426, 606 428 C 601 429, 591 429, 588 428 C 572 419, 567 418, 551 416 C 540 415, 540 415, 509 404 C 491 397, 485 395, 481 391 C 474 386, 463 380, 448 375 C 417 364, 396 354, 392 349 C 389 345, 383 341, 374 340 C 369 339, 364 337, 361 334 C 358 332, 354 331, 353 331 C 350 333, 353 341, 358 344 C 363 347, 362 347, 352 347 C 346 346, 338 346, 333 345 C 324 345, 323 345, 322 346 C 321 349, 325 352, 331 353 C 340 355, 341 356, 336 356 C 329 356, 321 358, 320 360 C 318 363, 321 365, 326 365 L 331 365 327 367 C 320 370, 324 374, 335 373 L 343 372 340 374 C 331 380, 335 382, 347 378 C 356 375, 374 373, 387 373 C 392 373, 391 372, 425 393 C 448 408, 458 414, 468 418 C 473 419, 485 425, 495 430 C 505 436, 520 443, 529 448 C 554 459, 554 459, 558 475 C 560 482, 562 516, 562 535 C 562 543, 561 545, 559 548 C 558 549, 556 552, 556 553 C 555 555, 551 558, 547 562 C 498 597, 478 641, 483 703 C 483 710, 484 723, 485 732 C 486 752, 487 756, 488 754 C 489 752, 489 735, 487 710 C 484 660, 491 630, 512 601 C 522 587, 542 568, 546 568 C 547 568, 548 567, 548 567 C 548 566, 550 564, 553 562 C 556 559, 558 557, 559 555 C 559 554, 560 553, 561 552 C 565 550, 567 534, 565 510 L 564 494 571 483 C 576 477, 580 470, 581 469 L 584 466 590 472 C 606 487, 623 498, 633 498 C 643 498, 659 493, 668 488 C 673 485, 673 485, 674 498 C 675 524, 662 533, 625 534 C 619 534, 614 535, 613 535 C 612 538, 640 536, 651 534 C 658 532, 658 531, 643 554 C 638 561, 634 569, 632 572 C 621 597, 572 630, 536 637 C 527 639, 528 640, 537 639 C 565 635, 606 611, 624 587 L 630 580 630 584 C 630 586, 632 593, 634 600 C 636 606, 639 618, 641 625 C 643 633, 646 642, 648 646 C 665 682, 704 697, 740 680 C 743 678, 746 677, 747 677 C 747 677, 743 682, 739 687 C 730 697, 725 700, 714 701 C 709 701, 708 702, 711 702 C 719 704, 740 696, 751 688 C 752 686, 750 687, 745 690 C 734 696, 732 696, 738 690 C 741 688, 745 683, 748 679 C 756 670, 787 646, 789 648 C 791 651, 790 657, 784 667 C 781 672, 775 681, 772 686 C 755 713, 739 726, 720 728 C 698 730, 677 713, 660 682 C 653 668, 653 671, 661 687 C 677 720, 703 736, 729 729 C 748 725, 765 706, 783 672 C 791 657, 791 658, 793 661 C 795 662, 795 662, 797 661 C 799 660, 799 661, 800 667 C 802 681, 803 687, 804 685 C 804 684, 803 678, 803 673 C 801 661, 799 646, 799 645 C 800 644, 805 653, 810 665 C 813 672, 820 688, 826 701 C 852 754, 860 783, 855 808 C 854 816, 851 816, 834 813 C 817 811, 804 812, 794 817 C 777 826, 772 840, 777 861 C 782 879, 780 888, 768 895 C 755 902, 741 902, 716 893 C 707 890, 704 890, 699 890 C 695 890, 692 890, 692 890 C 692 889, 702 879, 712 872 C 761 833, 784 785, 794 697 C 798 665, 796 665, 792 696 C 779 787, 759 830, 710 869 C 683 890, 681 898, 699 912 C 711 922, 710 930, 696 927 C 669 920, 640 935, 605 974 C 565 1018, 548 1031, 522 1037 C 503 1042, 484 1039, 460 1029 C 451 1025, 441 1022, 437 1022 C 437 1022, 437 1021, 438 1020 C 438 1019, 437 1015, 436 1012 C 434 1002, 434 1002, 436 998 C 438 996, 439 993, 439 993 C 438 990, 431 987, 422 985 C 411 983, 404 979, 394 970 C 375 954, 364 948, 350 947 C 339 947, 331 948, 326 952 L 322 955 322 952 C 325 941, 336 924, 349 911 C 364 895, 379 884, 413 866 C 471 834, 499 805, 541 733 C 541 732, 541 732, 541 732 C 540 732, 535 740, 529 749 C 509 778, 490 803, 476 816 L 470 823 473 816 C 481 800, 487 780, 488 765 C 488 757, 488 757, 487 758 C 486 760, 485 761, 485 762 C 485 777, 468 824, 460 831 C 449 841, 436 849, 409 864 C 364 888, 341 908, 326 935 C 309 965, 321 985, 357 989 C 378 992, 383 995, 377 1004 C 370 1014, 375 1021, 388 1024 C 391 1025, 393 1025, 394 1025 C 395 1027, 388 1042, 384 1047 C 378 1053, 373 1064, 373 1068 C 374 1072, 381 1072, 394 1069 C 410 1065, 416 1062, 416 1055 C 416 1053, 422 1039, 423 1038 C 424 1038, 424 1040, 424 1046 C 423 1053, 424 1055, 425 1055 C 428 1057, 429 1054, 431 1045 C 431 1040, 433 1033, 434 1030 L 436 1025 440 1025 C 443 1026, 447 1027, 450 1029 C 481 1042, 484 1042, 503 1042 C 531 1042, 552 1033, 579 1007 C 585 1001, 590 1000, 608 999 C 626 998, 638 994, 648 984 L 651 982 652 984 C 658 992, 658 996, 658 1009 C 657 1017, 657 1026, 658 1033 L 659 1044 652 1054 C 642 1066, 641 1070, 644 1072 C 647 1074, 661 1070, 676 1063 C 685 1059, 686 1058, 687 1044 C 688 1032, 691 1021, 694 1020 C 695 1020, 697 1025, 701 1035 C 703 1040, 704 1042, 707 1040 C 708 1038, 708 1038, 706 1030 C 705 1024, 704 1018, 704 1010 C 704 996, 700 989, 690 984 C 685 983, 674 969, 674 966 C 674 964, 686 953, 691 949 C 706 939, 710 933, 711 922 C 712 913, 715 905, 719 902 L 722 899 728 901 C 753 909, 777 900, 784 880 C 791 858, 802 845, 821 836 C 826 834, 834 830, 839 828 C 857 819, 860 815, 859 794 C 859 768, 851 743, 828 697 C 824 689, 819 678, 817 671 L 812 660 814 653 C 818 641, 818 641, 814 635 C 812 632, 808 626, 806 622 C 799 609, 798 608, 785 601 C 771 593, 759 585, 743 573 C 737 568, 728 563, 724 560 C 715 556, 716 556, 708 529 C 703 507, 703 506, 711 509 C 717 512, 725 510, 729 505 C 731 503, 731 503, 730 496 C 728 486, 731 484, 747 486 C 753 487, 760 485, 763 480 C 768 474, 768 472, 763 465 C 760 461, 758 458, 758 457 C 758 455, 766 447, 773 443 C 787 435, 787 431, 774 421 C 753 404, 742 393, 724 368 C 707 344, 695 334, 685 334 C 682 334, 681 334, 681 332 C 680 329, 676 328, 673 328 C 671 329, 670 328, 666 325 C 658 318, 654 317, 642 316 C 635 316, 628 316, 625 315 C 621 315, 619 315, 617 316 M 616 320 L 613 322 620 321 C 626 321, 628 321, 630 322 C 631 323, 631 324, 630 324 C 629 323, 627 323, 625 323 L 622 322 626 326 C 629 329, 632 333, 635 335 L 639 340 647 341 C 656 341, 671 339, 671 337 C 671 336, 670 337, 668 337 C 662 339, 654 339, 649 335 C 646 334, 644 331, 644 330 C 644 327, 635 320, 631 319 C 626 318, 620 318, 616 320 M 640 322 C 645 326, 650 329, 657 330 C 666 333, 666 332, 660 328 C 653 324, 653 323, 660 326 L 666 329 662 326 C 658 322, 649 319, 642 319 L 637 319 640 322 M 597 322 C 595 323, 596 323, 599 323 C 601 323, 604 323, 604 324 C 605 324, 606 325, 606 325 C 607 325, 606 324, 605 323 C 603 321, 600 321, 597 322 M 623 327 C 624 328, 625 331, 626 333 C 627 338, 633 342, 638 343 C 640 343, 643 343, 644 344 C 645 344, 648 345, 652 345 L 658 346 651 344 C 647 343, 642 342, 641 342 C 636 341, 634 339, 630 334 C 628 331, 625 327, 624 326 L 621 324 623 327 M 619 327 C 621 329, 625 340, 625 344 C 625 347, 623 344, 621 338 C 618 330, 616 327, 617 333 C 617 339, 620 344, 623 346 C 627 348, 627 348, 625 339 C 624 332, 621 325, 619 325 C 618 325, 618 326, 619 327 M 603 329 C 595 333, 585 345, 588 349 C 589 350, 589 350, 588 351 C 587 351, 587 359, 588 359 C 588 359, 589 358, 589 358 C 590 357, 590 358, 590 359 C 590 362, 587 366, 582 369 C 581 370, 581 370, 584 373 C 585 374, 586 375, 585 376 C 583 376, 584 380, 587 388 C 589 392, 591 397, 591 400 C 591 403, 592 406, 592 407 C 594 409, 604 408, 614 404 C 624 399, 625 400, 619 405 C 615 409, 615 410, 614 417 C 613 430, 611 432, 596 432 L 589 432 589 444 C 588 451, 588 458, 587 461 C 587 465, 587 465, 593 471 C 601 478, 612 487, 620 490 L 625 493 625 490 C 625 486, 627 487, 627 491 C 627 497, 645 496, 663 488 L 670 484 670 479 C 671 476, 671 468, 671 462 L 671 451 664 448 C 654 443, 648 437, 646 431 C 643 423, 644 397, 648 386 C 648 384, 648 384, 645 385 C 641 387, 638 384, 640 381 C 641 377, 644 376, 646 378 C 650 382, 656 375, 656 368 C 656 360, 650 358, 644 363 C 642 365, 640 366, 639 366 C 638 366, 637 367, 637 368 C 636 369, 634 371, 632 373 C 628 376, 628 379, 632 384 C 636 388, 636 392, 630 397 C 626 400, 626 399, 629 395 C 633 391, 633 388, 630 385 C 624 380, 624 376, 629 370 C 634 362, 633 357, 621 347 C 617 344, 615 340, 615 336 C 615 332, 613 329, 611 329 C 609 329, 608 329, 608 328 C 608 328, 606 328, 603 329 M 645 329 C 645 332, 654 336, 662 336 C 667 336, 667 336, 664 335 C 658 333, 653 331, 649 330 C 647 329, 645 328, 645 329 M 578 337 C 572 342, 570 347, 572 353 L 574 357 574 352 C 574 347, 579 337, 583 334 C 584 334, 584 333, 583 333 C 583 333, 580 335, 578 337 M 355 335 C 355 337, 358 341, 362 343 C 364 344, 367 347, 369 349 C 371 353, 375 356, 379 356 C 380 356, 381 356, 380 357 C 379 360, 370 356, 367 351 C 366 349, 365 348, 363 349 C 362 349, 360 349, 359 349 C 357 350, 350 349, 341 349 C 320 346, 320 349, 342 353 C 355 355, 355 356, 336 358 C 318 361, 319 362, 337 362 C 354 361, 355 362, 342 365 C 324 369, 324 371, 341 369 C 356 366, 359 367, 351 370 C 345 373, 339 377, 339 378 C 340 378, 344 377, 348 375 C 354 373, 360 372, 365 372 C 370 371, 376 370, 380 370 C 390 368, 392 369, 433 395 C 450 405, 462 412, 471 415 C 475 416, 484 420, 491 424 C 507 433, 518 439, 537 448 C 553 455, 555 457, 558 463 C 560 467, 560 471, 564 485 C 564 488, 565 488, 570 480 C 572 476, 576 471, 578 468 C 581 463, 583 454, 583 438 L 583 429 578 426 C 572 423, 566 421, 552 420 C 539 418, 531 416, 500 404 C 491 401, 486 399, 483 399 C 480 399, 477 399, 477 398 C 476 398, 478 398, 480 398 L 485 398 480 395 C 472 389, 463 384, 443 377 C 409 364, 397 358, 388 350 C 385 346, 382 345, 377 344 C 368 341, 363 339, 359 336 C 357 335, 355 334, 355 335 M 683 337 C 683 338, 685 340, 687 342 C 695 348, 701 358, 713 388 C 725 416, 733 432, 748 456 C 748 457, 748 457, 748 457 C 747 457, 735 440, 730 430 C 725 421, 719 407, 710 384 C 701 362, 696 352, 690 346 C 684 339, 682 340, 686 347 C 688 350, 690 356, 692 361 C 693 366, 695 371, 696 374 C 698 377, 698 379, 698 383 C 696 392, 705 443, 711 469 C 715 483, 716 487, 712 477 C 706 458, 702 438, 698 411 C 697 400, 696 390, 695 390 C 694 389, 692 393, 692 395 C 692 397, 691 399, 689 401 L 686 404 686 421 C 686 430, 685 438, 685 439 C 684 440, 684 435, 684 423 L 685 405 681 408 C 678 410, 677 410, 672 410 C 669 409, 666 409, 664 410 C 660 413, 654 413, 651 411 C 647 408, 647 408, 647 418 C 648 436, 655 443, 675 448 C 694 453, 698 460, 701 487 C 702 506, 703 507, 705 507 C 706 506, 709 507, 712 507 C 717 509, 721 508, 726 505 C 730 502, 730 501, 726 499 C 721 497, 719 495, 722 491 C 725 485, 733 482, 742 484 C 750 486, 755 485, 760 480 C 765 474, 765 472, 761 470 C 749 466, 754 452, 770 443 C 776 439, 780 435, 781 432 C 782 430, 779 428, 772 422 C 751 405, 738 392, 722 369 C 711 353, 701 343, 694 339 C 687 336, 682 335, 683 337 M 666 343 C 665 344, 663 345, 662 345 C 662 345, 660 346, 659 347 C 654 351, 642 350, 635 345 C 629 341, 627 342, 632 346 C 638 352, 654 355, 662 351 C 666 349, 671 344, 671 342 C 671 341, 670 342, 669 343 C 669 344, 667 345, 667 345 C 666 345, 667 344, 668 343 C 670 340, 669 340, 666 343 M 673 343 C 673 346, 669 350, 663 353 C 656 357, 655 358, 662 358 C 669 357, 675 349, 674 343 C 673 342, 673 342, 673 343 M 599 344 C 596 346, 597 347, 601 347 C 603 346, 606 347, 609 348 C 613 350, 613 350, 613 348 C 612 345, 603 342, 599 344 M 681 345 C 681 346, 681 348, 682 351 C 682 354, 683 358, 682 361 C 681 365, 681 365, 683 365 C 684 365, 686 366, 688 367 C 692 369, 692 366, 688 355 C 684 346, 683 343, 681 345 M 676 353 C 675 357, 672 360, 667 362 C 663 363, 663 364, 665 364 C 671 364, 678 358, 677 352 C 677 350, 676 350, 676 353 M 600 356 C 597 360, 598 362, 601 359 C 602 358, 603 358, 607 358 C 612 359, 612 358, 607 356 C 602 354, 601 354, 600 356 M 646 365 C 643 368, 644 369, 646 366 C 648 364, 649 364, 651 365 C 653 366, 653 366, 653 365 C 652 363, 648 363, 646 365 M 684 369 C 691 372, 694 378, 692 384 C 691 387, 691 387, 693 386 C 697 380, 690 368, 683 368 C 682 368, 683 369, 684 369 M 686 375 C 689 377, 689 379, 687 384 L 687 386 688 384 C 691 380, 690 375, 687 373 C 684 371, 684 372, 686 375 M 606 375 C 607 375, 604 376, 600 377 C 596 377, 591 379, 589 379 L 585 381 588 384 C 592 388, 594 391, 592 393 C 590 396, 593 397, 597 395 C 605 392, 613 374, 607 374 C 606 374, 606 374, 606 375 M 680 378 C 682 380, 684 387, 683 387 C 682 387, 681 385, 680 383 C 678 378, 676 376, 677 381 C 677 383, 677 383, 676 383 C 673 382, 673 384, 675 387 C 677 389, 677 389, 677 387 C 679 384, 680 385, 680 388 C 679 391, 679 391, 680 389 C 682 388, 682 388, 682 390 C 682 391, 681 392, 680 392 C 679 393, 680 393, 681 393 L 684 393 684 387 C 683 381, 681 376, 680 376 C 679 376, 679 377, 680 378 M 597 380 C 589 382, 588 383, 590 384 C 591 386, 601 383, 604 380 C 607 378, 606 378, 597 380 M 658 379 C 661 381, 665 381, 668 379 C 669 378, 669 378, 667 378 C 664 379, 662 379, 659 379 C 657 378, 657 378, 658 379 M 642 381 C 641 383, 642 384, 643 384 C 645 384, 646 381, 645 380 C 643 379, 642 379, 642 381 M 679 398 C 676 402, 675 402, 670 399 L 667 397 669 399 C 672 403, 677 403, 681 400 C 683 397, 684 395, 683 395 C 682 395, 681 396, 679 398 M 653 406 C 654 409, 659 410, 663 408 C 664 406, 664 406, 660 407 C 657 407, 654 407, 653 406 C 652 405, 652 405, 653 406 M 667 418 C 666 423, 666 429, 666 433 L 665 439 667 431 C 669 423, 670 410, 668 410 C 668 410, 667 414, 667 418 M 585 439 C 585 444, 585 452, 584 456 C 584 459, 584 463, 584 463 C 585 464, 587 445, 587 437 C 587 427, 586 430, 585 439 M 594 436 C 594 437, 603 442, 611 446 C 616 447, 620 450, 621 451 C 622 452, 623 453, 624 453 C 626 451, 617 446, 595 436 C 595 436, 594 436, 594 436 M 561 452 C 563 454, 566 459, 568 463 C 571 469, 572 471, 571 466 C 569 460, 563 450, 559 448 C 557 447, 558 449, 561 452 M 673 464 C 673 471, 673 478, 672 480 C 672 483, 672 483, 673 482 C 674 482, 674 477, 674 466 L 673 451 673 464 M 638 454 C 635 456, 636 456, 640 455 C 642 453, 644 453, 650 454 C 655 454, 660 454, 662 453 C 665 452, 663 452, 652 452 C 641 452, 639 452, 638 454 M 676 468 C 676 476, 676 485, 676 487 L 677 490 678 487 C 680 483, 681 485, 679 489 C 677 492, 677 494, 678 500 C 678 506, 678 509, 677 513 L 675 519 679 532 C 682 540, 687 553, 690 561 L 696 577 703 581 C 714 589, 726 594, 744 601 C 787 618, 785 617, 785 627 C 785 632, 786 634, 788 638 C 789 641, 791 647, 792 651 C 795 661, 797 660, 796 648 C 796 638, 797 632, 799 637 C 799 638, 800 640, 802 640 C 803 641, 804 643, 804 644 C 804 644, 805 647, 807 650 L 810 656 810 652 C 810 645, 811 641, 812 641 C 812 642, 813 643, 812 644 L 812 647 813 644 C 814 642, 814 641, 811 636 C 809 633, 805 627, 803 622 C 797 611, 795 610, 787 606 C 775 600, 760 590, 744 578 C 736 572, 726 565, 722 563 C 713 558, 713 558, 707 538 C 701 515, 699 506, 697 490 C 695 467, 693 460, 685 456 C 676 450, 676 450, 676 468 M 756 464 C 756 466, 757 467, 760 468 C 763 469, 763 469, 760 464 C 757 460, 756 460, 756 464 M 723 491 C 722 494, 722 495, 726 498 C 729 499, 729 499, 729 497 C 728 496, 728 494, 727 492 C 727 488, 726 488, 723 491 M 598 508 C 601 510, 619 520, 622 520 C 623 520, 624 520, 624 521 C 626 523, 593 523, 588 520 C 586 519, 585 519, 585 520 C 585 527, 641 525, 649 518 C 649 517, 649 517, 648 517 C 630 522, 620 520, 599 507 L 597 506 598 508 M 666 528 C 663 531, 658 537, 655 542 C 653 546, 648 554, 644 559 C 633 576, 632 581, 637 597 C 639 601, 642 612, 644 622 C 652 654, 665 671, 690 680 C 713 688, 734 682, 763 661 C 771 655, 780 649, 783 647 L 788 645 785 640 C 783 635, 782 633, 782 628 C 782 619, 783 620, 754 609 C 722 597, 700 586, 694 579 C 692 575, 682 550, 676 534 C 674 527, 672 522, 672 522 C 672 522, 669 525, 666 528 M 645 528 C 643 528, 642 529, 641 530 L 639 531 641 531 C 642 530, 645 529, 648 529 C 651 528, 654 528, 654 528 C 654 527, 647 527, 645 528 M 616 555 C 601 562, 575 569, 561 569 C 556 569, 555 569, 556 570 C 560 573, 580 570, 595 565 C 608 561, 627 552, 622 552 C 622 552, 619 553, 616 555 M 565 555 C 565 556, 577 557, 582 556 C 586 555, 586 555, 577 555 C 572 555, 567 555, 567 554 C 566 554, 565 554, 565 555 M 623 601 C 612 622, 594 644, 567 669 C 537 695, 525 709, 513 734 C 508 744, 497 771, 497 772 C 498 772, 500 767, 502 761 C 519 721, 534 701, 570 670 C 598 645, 613 625, 624 603 C 628 593, 628 591, 623 601 M 631 612 C 628 639, 619 670, 604 700 C 593 722, 587 732, 561 773 C 544 800, 532 819, 518 845 C 501 876, 492 891, 483 903 C 465 927, 445 944, 428 950 C 425 951, 424 951, 425 952 C 427 952, 438 948, 446 943 C 452 940, 458 935, 467 926 C 486 907, 495 894, 519 850 C 537 818, 546 802, 559 783 C 614 698, 629 662, 632 616 C 632 603, 632 600, 631 612 M 633 693 C 633 694, 632 700, 631 706 C 630 713, 628 730, 626 743 C 619 796, 612 824, 593 866 C 588 876, 590 874, 596 861 C 613 829, 623 794, 629 741 C 630 729, 632 713, 633 707 C 633 700, 634 694, 634 694 C 633 693, 633 693, 633 693 M 758 737 C 734 774, 700 804, 675 813 C 668 815, 668 815, 672 815 C 698 812, 740 773, 764 731 C 769 722, 767 724, 758 737 M 808 816 C 795 818, 783 828, 779 839 C 778 845, 778 850, 781 863 L 784 872 785 868 C 789 856, 803 841, 819 834 C 823 831, 832 827, 839 824 L 850 819 843 818 C 839 818, 832 817, 828 816 C 817 815, 816 815, 808 816 M 559 839 C 554 850, 553 853, 542 882 C 521 937, 507 962, 484 985 C 479 990, 476 994, 477 993 C 482 990, 502 970, 508 960 C 523 937, 531 919, 545 879 C 550 866, 556 849, 559 842 C 565 826, 565 824, 559 839 M 448 852 C 445 857, 435 867, 427 876 C 418 884, 414 890, 416 888 C 427 879, 458 845, 456 844 C 456 843, 452 847, 448 852 M 642 892 C 627 908, 603 940, 587 968 C 579 980, 566 1000, 559 1008 C 550 1019, 549 1021, 553 1017 C 563 1009, 570 998, 603 947 C 621 919, 633 904, 648 889 C 653 884, 656 880, 655 880 C 655 880, 649 886, 642 892 M 692 895 C 689 898, 690 901, 701 910 C 709 918, 709 918, 709 915 C 709 912, 713 903, 716 900 C 718 898, 718 897, 708 895 C 700 892, 695 893, 692 895 M 677 929 C 670 930, 663 933, 662 934 C 662 936, 671 962, 673 962 C 673 962, 675 960, 677 958 C 678 955, 682 951, 686 949 C 695 942, 702 936, 704 933 L 706 930 704 931 C 702 931, 698 930, 693 930 C 686 928, 681 928, 677 929 M 650 939 C 639 946, 634 950, 635 952 C 660 987, 663 993, 661 1011 C 660 1018, 660 1024, 661 1032 C 662 1037, 662 1043, 662 1044 C 661 1048, 663 1048, 669 1047 C 673 1045, 676 1041, 678 1035 C 690 985, 689 991, 682 983 C 675 976, 670 967, 663 948 C 660 941, 658 935, 657 935 C 657 935, 654 937, 650 939 M 335 952 C 321 956, 319 964, 329 975 C 336 982, 342 984, 358 986 C 379 988, 387 996, 380 1006 C 375 1012, 378 1018, 387 1021 C 395 1023, 394 1023, 398 1014 C 400 1010, 404 1003, 407 998 C 413 987, 413 987, 406 984 C 403 982, 396 977, 389 971 C 377 960, 371 956, 361 953 C 353 950, 341 950, 335 952 M 620 963 C 600 984, 587 998, 590 998 C 591 997, 598 997, 606 996 C 615 995, 621 995, 626 993 C 635 990, 649 981, 649 979 C 649 977, 632 953, 631 953 C 631 953, 626 958, 620 963 M 413 993 C 411 997, 407 1003, 405 1008 C 399 1018, 390 1046, 392 1047 C 397 1051, 409 1048, 413 1042 C 422 1027, 430 1010, 428 1012 C 427 1012, 427 1011, 429 1008 C 429 1007, 431 1004, 431 1001 C 432 999, 433 996, 433 994 C 434 992, 431 990, 420 988 L 416 987 413 993 M 690 992 C 690 998, 681 1036, 679 1041 C 676 1047, 671 1050, 664 1050 L 659 1050 652 1058 C 649 1063, 646 1068, 646 1068 C 646 1072, 679 1060, 682 1055 C 682 1054, 683 1050, 683 1045 C 685 1028, 687 1022, 695 1013 C 703 1005, 702 1000, 694 991 L 690 988 690 992 M 431 1012 C 431 1015, 419 1038, 415 1043 C 410 1051, 397 1054, 390 1049 L 387 1047 383 1053 C 378 1061, 376 1066, 377 1067 C 379 1070, 408 1063, 411 1059 C 411 1058, 413 1055, 414 1051 C 418 1041, 420 1037, 427 1030 C 434 1023, 434 1023, 434 1018 C 434 1012, 432 1008, 431 1012 M 698 1014 C 696 1016, 696 1016, 697 1018 C 698 1019, 700 1024, 701 1028 C 704 1037, 705 1038, 703 1029 C 702 1025, 701 1019, 701 1017 C 701 1012, 700 1011, 698 1014 M 428 1032 C 428 1033, 427 1038, 427 1043 C 426 1053, 426 1053, 428 1041 C 430 1031, 430 1030, 428 1032"/>
+        </g></g>
+      </svg>
+    </div>
+    <div class="title">
+      <div class="starring rv">STARRING</div>
+      <h1 class="rv d1">FARUKH QAYYUM<em>and</em>MUFAZIA ALAM</h1>
+      <p class="tag rv d2"><b>2026년 11월 22일 일요일 오후 8시</b><br>한패스 본사 B2 · 온라인 결혼식</p>
+    </div>
+    <div class="cue">SCROLL<span></span></div>
+    <div class="lb b"></div>
+  </header>
+
+  <!-- ===== SCENE 02 ===== -->
+  <section class="mono">
+    <div class="scene rv">SCENE 02 · THE PROMISE</div>
+    <div class="quote rv d1">“</div>
+    <div class="lines">
+      <p class="ln"><span class="wipe rv"><span>함께하는 모든 순간이</span></span><span class="wipe rv d1"><span>행복이 되도록</span></span></p>
+      <div class="gap"></div>
+      <p class="ln"><span class="wipe rv"><span>서로 사랑하고 존중하며</span></span><span class="wipe rv d1"><span>살아가겠습니다.</span></span></p>
+      <p class="ln sm rv">저희 두 사람의 아름다운 약속의 날,<br>소중한 분들을 초대합니다.<br>따뜻한 축복으로 함께해 주세요.</p>
+    </div>
+    <div class="sig rv"><i>신랑</i><b>FARUKH QAYYUM</b><br><i>신부</i><b>MUFAZIA ALAM</b></div>
+  </section>
+
+  <!-- ===== SCENE 03 ===== -->
+  <section class="day">
+    <div class="scene rv">SCENE 03 · THE DAY</div>
+    <div class="big rv d1"><span class="num wipe"><span>22</span></span><span class="mon">NOVEMBER</span></div>
+    <div class="when rv d2">SUNDAY · 8 PM – 11 PM</div>
+    <div class="when-ko rv d3">2026년 11월 22일 일요일 오후 8시</div>
+    <div class="cal rv">
+      <table>
+        <thead><tr><th class="sun">SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th></tr></thead>
+        <tbody>
+          <tr><td class="sun">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+          <tr><td class="sun">8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+          <tr><td class="sun">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+          <tr><td class="sun dday"><span>22</span></td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+          <tr><td class="sun">29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="countWrap">
+      <div class="timecode rv"><b id="cd-d">00</b><s>:</s><b id="cd-h">00</b><s>:</s><b id="cd-m">00</b><s>:</s><b id="cd-s">00</b></div>
+      <div class="tclab"><span>DAYS</span><span>HRS</span><span>MIN</span><span>SEC</span></div>
+    </div>
+    <p class="dline rv" id="dline">두 사람의 결혼식이 <b id="dd">0</b>일 남았습니다</p>
+  </section>
+
+  <!-- ===== SCENE 04 ===== -->
+  <section class="loc">
+    <div class="ghost">HANPASS</div>
+    <div class="scene rv">SCENE 04 · THE PLACE</div>
+    <div class="place rv d1">한패스 본사 B2</div>
+    <div class="place-en rv d2">HANPASS HEADQUARTER · B2</div>
+    <div class="time rv d3">2026년 11월 22일 일요일<br>오후 8시 – 오후 11시</div>
+    <div class="chip rv d4"><i></i>ONLINE WEDDING <span>온라인 결혼식</span></div>
+  </section>
+
+  <!-- ===== SCENE 05 ===== -->
+  <section class="love">
+    <div class="scene rv">SCENE 05 · WITH LOVE</div>
+    <div class="who rv d1">THE GROOM</div>
+    <div class="who-name rv d1">FARUKH QAYYUM</div>
+    <div class="box rv">
+      <div><div class="k">신랑 연락처</div><div class="v">010-5900-5577</div></div>
+      <div class="btns"><a class="btn" href="tel:01059005577">전화</a><a class="btn" href="sms:01059005577">문자</a></div>
+    </div>
+    <div class="box rv d1">
+      <div><div class="k">마음 전하실 곳 · 국민은행</div><div class="v">053601-04-147348</div><div class="h">예금주 FARUKH QAYYUM</div></div>
+      <div class="btns"><button class="btn dark" type="button" data-copy="국민은행 053601-04-147348">복사</button></div>
+    </div>
+    <p class="tip rv">참석이 어려우신 분들도<br>따뜻한 마음으로 축하해 주시면 감사히 간직하겠습니다.</p>
+  </section>
+
+  <!-- ===== END CREDITS ===== -->
+  <footer class="credits">
+    <div class="roll">
+      <div class="blk rv"><div class="role">STARRING</div><div class="who">FARUKH QAYYUM<br>MUFAZIA ALAM</div></div>
+      <div class="blk rv"><div class="role">DIRECTED BY</div><div class="who">LOVE</div></div>
+      <div class="blk rv"><div class="role">WITH SPECIAL THANKS TO</div><div class="who ko">함께해 주시는 모든 분들</div></div>
+      <div class="blk rv"><div class="role">PREMIERE</div><div class="who">22.11.2026 · 8 PM<br>HANPASS HQ B2</div></div>
+    </div>
+    <div class="end rv">THE END</div>
+    <div class="end-sub rv">AND THE BEGINNING OF FOREVER</div>
+    <button class="replay" id="replay" type="button">↺ REPLAY OPENING</button>
+    <div style="height:40px"></div>
+    <div class="lb"></div>
+  </footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Opening sequence ---------- */
+  var intro = document.getElementById('intro'), timers = [];
+  function clear(){ timers.forEach(clearTimeout); timers = []; }
+  function endIntro(){
+    clear();
+    intro.classList.add('open');
+    timers.push(setTimeout(function(){ intro.classList.add('done'); document.body.classList.remove('locked'); revealHero(); }, 900));
+  }
+  function playIntro(){
+    clear();
+    document.body.classList.add('locked');
+    intro.classList.remove('done','open');
+    ['s1','s2','s3'].forEach(function(id){ var el=document.getElementById(id); el.className='shot'; });
+    void intro.offsetWidth;
+    timers.push(setTimeout(function(){ document.getElementById('s1').classList.add('on'); }, 300));
+    timers.push(setTimeout(function(){ document.getElementById('s2').classList.add('on'); }, 2600));
+    timers.push(setTimeout(function(){ document.getElementById('s3').classList.add('on'); }, 4900));
+    timers.push(setTimeout(endIntro, 7100));
+  }
+  document.getElementById('skip').addEventListener('click', endIntro);
+  document.getElementById('replay').addEventListener('click', function(){ window.scrollTo(0,0); playIntro(); });
+
+  /* ---------- Scroll reveals ---------- */
+  var els = document.querySelectorAll('.rv');
+  function revealHero(){ document.querySelectorAll('.hero .rv').forEach(function(e){ e.classList.add('in'); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting && !document.body.classList.contains('locked')) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.15, rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(e){ if (!e.closest('.hero')) io.observe(e); });
+    window.addEventListener('scroll', function once(){ els.forEach(function(e){ var r=e.getBoundingClientRect(); if (r.top < innerHeight*0.94 && !document.body.classList.contains('locked')) e.classList.add('in'); }); }, {passive:true});
+  } else { els.forEach(function(e){ e.classList.add('in'); }); }
+
+  if (reduce) { intro.classList.add('done'); document.body.classList.remove('locked'); els.forEach(function(e){ e.classList.add('in'); }); }
+  else { playIntro(); }
+
+  /* ---------- Countdown (2026-11-22 20:00 KST) ---------- */
+  var target = Date.UTC(2026, 10, 22, 11, 0, 0);
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    var d = target - Date.now();
+    if (d <= 0) {
+      document.getElementById('countWrap').style.display = 'none';
+      document.getElementById('dline').textContent = '두 사람의 결혼을 진심으로 축하합니다';
+      return;
+    }
+    var s = Math.floor(d/1000), days = Math.floor(s/86400);
+    document.getElementById('cd-d').textContent = pad(days);
+    document.getElementById('dd').textContent = days;
+    document.getElementById('cd-h').textContent = pad(Math.floor(s%86400/3600));
+    document.getElementById('cd-m').textContent = pad(Math.floor(s%3600/60));
+    document.getElementById('cd-s').textContent = pad(s%60);
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* ---------- Copy account ---------- */
+  var toast = document.getElementById('toast');
+  function show(m){ toast.textContent = m; toast.classList.add('show'); setTimeout(function(){ toast.classList.remove('show'); }, 1800); }
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var t = b.getAttribute('data-copy');
+      function fallback(){
+        try { var ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); show('계좌번호가 복사되었습니다'); }
+        catch(_) { show('국민은행 053601-04-147348'); }
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(function(){ show('계좌번호가 복사되었습니다'); }, fallback);
+      else fallback();
+    });
+  });
+})();
+</script>
+</body>
+</html>
